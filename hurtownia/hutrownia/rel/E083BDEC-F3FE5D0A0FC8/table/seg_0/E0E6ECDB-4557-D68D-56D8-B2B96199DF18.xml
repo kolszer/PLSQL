@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E0E6ECDB-4557-D68D-56D8-B2B96199DF18" name="Klient">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 15:48:48 UTC</createdTime>
+<comment>Tabela</comment>
+<commentInRDBMS>Tabela</commentInRDBMS>
+<ownerDesignName>hutrownia</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="90DDFBFE-A4D2-FB7B-3A29-2DE493B6D2B2">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:26:18 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nazwa" id="DEAF7BFA-9919-E61E-5498-34481CB5C426">
+<createdBy>n</createdBy>
+<createdTime>2017-10-30 21:06:18 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rabat" id="6F08DF5F-CD75-F222-9F00-3E40793A363F">
+<createdBy>n</createdBy>
+<createdTime>2017-10-30 21:06:59 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Kontakt_id" id="25394E0C-86A1-E496-627E-DB742F2CF8B1">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:31:05 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="662881C1-8F03-CF9E-266F-C2003440DD77" referredColumn="C0F5D09B-0CD9-16C9-59F5-FC7F4DDBA9D4"/>
+</associations>
+</Column>
+<Column name="Konto_id" id="23FBC1CC-3BF5-9037-AEB9-332F756388F0">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 15:43:45 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7D4A8CF7-B05B-2DA5-56D6-E869D56D9D18" referredColumn="C97EBE43-0272-D992-9CBA-7457DD884363"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BD2C0085-A08B-18F0-1737-4DE2DC8A3BCA" name="Klient_PK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:26:18 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="90DDFBFE-A4D2-FB7B-3A29-2DE493B6D2B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E2F99775-0353-715A-C317-059799AE2CDE" name="Klient__UN">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 21:12:29 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="25394E0C-86A1-E496-627E-DB742F2CF8B1"/>
+<colUsage columnID="23FBC1CC-3BF5-9037-AEB9-332F756388F0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="128717D9-E3F5-BECB-6B91-8B42A61B2EDD" name="Klient_Kontakt_FK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:31:05 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="25394E0C-86A1-E496-627E-DB742F2CF8B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AE9CD589-C2D3-59C2-FD45-C64459D2B21F" name="Klient_Konto_FK">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 15:43:45 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="23FBC1CC-3BF5-9037-AEB9-332F756388F0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

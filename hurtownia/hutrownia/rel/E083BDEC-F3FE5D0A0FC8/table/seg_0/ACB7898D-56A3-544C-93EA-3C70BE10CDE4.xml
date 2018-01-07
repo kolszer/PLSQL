@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ACB7898D-56A3-544C-93EA-3C70BE10CDE4" name="Platnosc">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 15:50:23 UTC</createdTime>
+<comment>Tabela</comment>
+<commentInRDBMS>Tabela</commentInRDBMS>
+<ownerDesignName>hutrownia</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="FE702957-330A-3334-FC79-6DA771371481">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:24:45 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Kwota" id="1AEB8007-2DB9-E83F-35DE-CD0C4EBA0F0A">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 21:09:12 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rachunek" id="A8805A42-3257-2A9D-F657-2362E874F649">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 21:09:55 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>26 CHAR</dataTypeSize>
+<ownDataTypeParameters>26 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data" id="9B62D1C1-4B71-0968-8F76-1839F774267F">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 21:10:22 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Faktura_id" id="27D4E238-5C8B-DCAF-81A3-EFD5F0D5FB88">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 23:22:50 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E279FBAB-64BB-A7D6-6D6B-07FFA28AC2D9" referredColumn="87EFDAD9-FD6E-4272-8F4E-F5AE3674B10D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5E9F3C6E-7677-B4C6-0B5C-C52B6F62B48A" name="Platnosc_PK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:24:45 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE702957-330A-3334-FC79-6DA771371481"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F09EAF6D-8050-34E8-FCA3-3C1EA28C5BAA" name="Platnosc_Faktura_FK">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 23:22:50 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="27D4E238-5C8B-DCAF-81A3-EFD5F0D5FB88"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="Platnosc_CK_1" directorySegmentName="seg_0" id="5E315485-F217-779F-7267-A1C5919F041A">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 21:33:34 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<rule>Kwota&gt;0</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

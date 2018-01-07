@@ -1,0 +1,186 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2328AC17-7ED9-5F6E-FB7D-073D0912A496" name="Pracownik">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 15:49:51 UTC</createdTime>
+<comment>Tabela</comment>
+<commentInRDBMS>Tabela</commentInRDBMS>
+<ownerDesignName>hutrownia</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="89BB88E3-B2F6-1718-5C5F-0FE2E2176E1E">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:16:06 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Imie" id="A08BB5B8-06AD-B895-4D0A-35B57B558249">
+<createdBy>n</createdBy>
+<createdTime>2017-10-30 00:04:24 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nazwisko" id="C82CC2F9-AEC8-3D68-E984-E3C24DE10687">
+<createdBy>n</createdBy>
+<createdTime>2017-10-30 00:07:03 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pensja" id="D63E20F4-5893-3F91-ED5E-EF6C657EBD5E">
+<createdBy>n</createdBy>
+<createdTime>2017-10-30 00:09:11 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_ur" id="B337E91E-BB5B-7D14-7929-FFB3FDF60306">
+<createdBy>n</createdBy>
+<createdTime>2017-10-30 00:11:09 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Oddzial_id" id="77B85DC5-6B27-E1F2-4780-2AD92EE2CC8C">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:28:49 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="487CE8D0-3BF3-883A-2EF3-1EB7371A9C04" referredColumn="2EE01829-6088-2CF1-AA56-9C4B95BFF2D7"/>
+</associations>
+</Column>
+<Column name="Kontakt_id" id="05279505-649A-0724-C939-862B086680AA">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:30:26 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0BF7EF6C-0951-D5F1-CA16-3BF1C3EFA3CA" referredColumn="C0F5D09B-0CD9-16C9-59F5-FC7F4DDBA9D4"/>
+</associations>
+</Column>
+<Column name="Konto_id" id="85B3D67D-A2D1-E7D5-F158-80C7CEAA8EFC">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 15:43:50 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D13DEEB4-6191-AAC5-2FE1-BE7AB1F4357E" referredColumn="C97EBE43-0272-D992-9CBA-7457DD884363"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="846890B4-13EB-1557-2DE5-CF797ED7477B" name="Pracownik_PK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:16:06 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="89BB88E3-B2F6-1718-5C5F-0FE2E2176E1E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="08F3AC6B-2D34-7F6E-52FE-A2C0747D1E1F" name="Pracownik__UNv1">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 15:36:56 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="05279505-649A-0724-C939-862B086680AA"/>
+<colUsage columnID="85B3D67D-A2D1-E7D5-F158-80C7CEAA8EFC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FCBE8299-A6E2-B36F-4578-0EFF71F12C19" name="Pracownik_Oddzial_FK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:28:49 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77B85DC5-6B27-E1F2-4780-2AD92EE2CC8C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6C44C95F-9776-78E7-DB2F-B2A351C2C423" name="Pracownik_Kontakt_FK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:30:26 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="05279505-649A-0724-C939-862B086680AA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="53F2356F-40D7-1ECE-B9E8-6D0955D6C3EA" name="Pracownik_Konto_FK">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 15:43:50 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="85B3D67D-A2D1-E7D5-F158-80C7CEAA8EFC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="Pracownik_CK_1" directorySegmentName="seg_0" id="7C28CD34-3DA7-8667-6803-5F2990E1E95E">
+<createdBy>n</createdBy>
+<createdTime>2017-10-30 00:24:49 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<rule>LEN(imie) &gt; 2</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="Pracownik_CK_2" directorySegmentName="seg_0" id="F13346F3-897C-09FE-1BDD-BB9CB53AEFA9">
+<createdBy>n</createdBy>
+<createdTime>2017-10-30 00:24:49 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<rule>LEN(nazwisko) &gt; 2</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="Pracownik_CK_3" directorySegmentName="seg_0" id="53FC0CD1-49BB-DEDB-C7BD-BBFAD10E51D2">
+<createdBy>n</createdBy>
+<createdTime>2017-10-30 00:24:49 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<rule>pensja &gt; 999</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

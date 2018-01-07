@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="041B84D3-BB10-6322-6EB9-FFB8C0746ACE" name="Produkt">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 15:48:33 UTC</createdTime>
+<comment>Tabela</comment>
+<commentInRDBMS>Tabela</commentInRDBMS>
+<ownerDesignName>hutrownia</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="646E6610-A863-3430-E2A5-4A4B60674F15">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:26:40 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nazwa" id="9EC6E00C-774E-2DF2-7BA1-66288B910DFC">
+<createdBy>n</createdBy>
+<createdTime>2017-10-30 21:08:26 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ilosc" id="285D8A68-367B-D634-4714-507597CEE60F">
+<createdBy>n</createdBy>
+<createdTime>2017-10-30 21:08:26 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,14,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cena" id="E012B50E-89CC-60B4-98AD-2481D86794C8">
+<createdBy>n</createdBy>
+<createdTime>2017-10-30 21:08:57 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Kategoria_id" id="DCF4FA12-C592-F117-1B8B-CDB7584AECFC">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:46:53 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E1E0BA38-D20C-11B5-6695-72566CB38F29" referredColumn="B278B1C6-5D75-C27E-4823-7B13676E6452"/>
+</associations>
+</Column>
+<Column name="Producent_id" id="D5A1FEEA-07D5-321E-8EEF-C5C24F4089B6">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 23:02:01 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2D788842-610E-EB59-588B-6EF4424BBF7D" referredColumn="4B0CF259-D386-D0A1-1C1D-E9FA961CDC77"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="52D0DC4A-D3B2-C867-00BE-3DA2157727B6" name="Produkt_PK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:26:40 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="646E6610-A863-3430-E2A5-4A4B60674F15"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E58CB671-D401-F6EE-2648-E3ACC07EE063" name="Produkt_Kategoria_FK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:46:53 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCF4FA12-C592-F117-1B8B-CDB7584AECFC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AED22BE8-6F3A-FA59-17F5-F5DF7EEDA8D8" name="Produkt_Producent_FK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 23:02:01 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D5A1FEEA-07D5-321E-8EEF-C5C24F4089B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="Produkt_CK_1" directorySegmentName="seg_0" id="0367A076-AE71-D150-5C20-0EE68292F6F0">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 21:37:44 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<rule>Cena&gt;=0</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

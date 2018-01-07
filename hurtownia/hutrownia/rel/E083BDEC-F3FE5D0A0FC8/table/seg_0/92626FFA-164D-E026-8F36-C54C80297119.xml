@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="92626FFA-164D-E026-8F36-C54C80297119" name="Magazyn">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 15:48:40 UTC</createdTime>
+<comment>Tabela</comment>
+<commentInRDBMS>Tabela</commentInRDBMS>
+<ownerDesignName>hutrownia</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="CA17EDBF-EBF7-9CDD-45EF-D1A1555F566F">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:25:32 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Oddzial_id" id="5C705306-8E8B-73E4-EA83-E410279439E6">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:33:41 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FA733CAF-75BF-1BAB-6551-12038A63BEFC" referredColumn="2EE01829-6088-2CF1-AA56-9C4B95BFF2D7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="95F0BAFF-281A-5EA4-72B1-7084EADDE1EE" name="Magazyn_PK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:25:32 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA17EDBF-EBF7-9CDD-45EF-D1A1555F566F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="627665D8-F69C-1922-58DD-97E708E6CAFD" name="Magazyn_Oddzial_FK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:33:41 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C705306-8E8B-73E4-EA83-E410279439E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

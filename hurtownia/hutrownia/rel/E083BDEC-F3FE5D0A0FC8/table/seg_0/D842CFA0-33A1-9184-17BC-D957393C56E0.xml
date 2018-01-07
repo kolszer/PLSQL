@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D842CFA0-33A1-9184-17BC-D957393C56E0" name="Kontener">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 20:25:02 UTC</createdTime>
+<comment>Tabela</comment>
+<commentInRDBMS>Tabela</commentInRDBMS>
+<ownerDesignName>hutrownia</ownerDesignName>
+<ordsAlias>table_18</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="346E9FDF-2AAA-3377-8E76-150FC71F4D5B">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 20:27:12 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Sektor_id" id="34E2FE5E-9C67-DB1A-3EA4-DC77A4BAB089">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 21:19:23 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E1EBD400-A73E-7611-1B38-527771222F94" referredColumn="87AECD3A-0AF3-A77C-9B04-AD9256C31D69"/>
+</associations>
+</Column>
+<Column name="Produkt_id" id="A9E7C85D-899D-FAFD-2BB3-44CFAC8C5A42">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 23:07:26 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="627EBA5B-12BD-D368-7C0E-AF3F064CD6D6" referredColumn="646E6610-A863-3430-E2A5-4A4B60674F15"/>
+</associations>
+</Column>
+<Column name="Kontener" id="5624A05D-63A7-91AB-5697-657A24916989">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 21:16:21 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8CF95A49-0607-5A3F-C217-B213BCE5A056" name="Kontener_PK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 20:27:12 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="346E9FDF-2AAA-3377-8E76-150FC71F4D5B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="648746AA-A296-1291-C526-ED2719C16091" name="Kontener_Sektor_FK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 21:19:23 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="34E2FE5E-9C67-DB1A-3EA4-DC77A4BAB089"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FA1B04C2-C2A7-C691-6DDF-5185CA7419F1" name="Kontener_Produkt_FK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 23:07:26 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9E7C85D-899D-FAFD-2BB3-44CFAC8C5A42"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

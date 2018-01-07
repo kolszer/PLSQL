@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="650BE5B5-34E3-3A63-98C8-CC69ADBC7DB2" name="Sektor">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 20:23:38 UTC</createdTime>
+<comment>Tabela</comment>
+<commentInRDBMS>Tabela</commentInRDBMS>
+<ownerDesignName>hutrownia</ownerDesignName>
+<ordsAlias>table_17</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="87AECD3A-0AF3-A77C-9B04-AD9256C31D69">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 20:24:22 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Magazyn_id" id="936B936D-6435-60E9-8361-78C3AA5212F6">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 21:19:11 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D4938B01-22FC-5549-B7C7-6AD0DD8E5468" referredColumn="CA17EDBF-EBF7-9CDD-45EF-D1A1555F566F"/>
+</associations>
+</Column>
+<Column name="Sektor" id="A34B46AD-6C2C-FBA3-73FB-92D2E0DCF68B">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 21:15:33 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="441D140D-6D76-E842-5BCF-129F9D048C48" name="Sektor_PK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 20:24:22 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87AECD3A-0AF3-A77C-9B04-AD9256C31D69"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="02B98CA6-250C-0B3F-1541-16198A5D4420" name="Sektor_Magazyn_FK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 21:19:11 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="936B936D-6435-60E9-8361-78C3AA5212F6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

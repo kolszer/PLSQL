@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="36F38CCD-16FC-EE20-283B-1F218A4CD881" name="Faktura">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 15:49:33 UTC</createdTime>
+<comment>Tabela</comment>
+<commentInRDBMS>Tabela</commentInRDBMS>
+<ownerDesignName>hutrownia</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="87EFDAD9-FD6E-4272-8F4E-F5AE3674B10D">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:28:27 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Numer_faktury" id="57D36747-8055-81FB-5607-B7FCEC8FC204">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 16:07:54 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Kwota" id="0EFE55DC-1FA7-6BDC-2C4E-E03B101B7EC8">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 21:08:31 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Zamowienie_id" id="BFB98C44-17DC-7891-059E-782CD6790577">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 23:22:35 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F5550CD0-5968-7229-5A84-21646C522F54" referredColumn="9FB14747-A016-6CB9-DF49-283C58C88CD6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="27FB99FF-5B5A-1721-7889-557930A31861" name="Faktura_PK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:28:27 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87EFDAD9-FD6E-4272-8F4E-F5AE3674B10D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2EE8105E-EBA8-5597-EA9A-8A2C99FCC87B" name="Faktura__UN">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 16:08:02 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="57D36747-8055-81FB-5607-B7FCEC8FC204"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DA12DB77-E0A5-AE69-0476-C1A7CA605A99" name="Faktura_Zamowienie_FK">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 23:22:35 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BFB98C44-17DC-7891-059E-782CD6790577"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="Faktura_CK_1" directorySegmentName="seg_0" id="B00BB304-DFCB-58AF-7547-3A1C843C4496">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 21:31:19 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<rule>Kwota&gt;0</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

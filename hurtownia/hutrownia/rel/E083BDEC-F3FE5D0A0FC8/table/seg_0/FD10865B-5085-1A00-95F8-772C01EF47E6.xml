@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FD10865B-5085-1A00-95F8-772C01EF47E6" name="ZamowienieProd">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 22:59:13 UTC</createdTime>
+<comment>Tabela</comment>
+<commentInRDBMS>Tabela</commentInRDBMS>
+<ownerDesignName>hutrownia</ownerDesignName>
+<ordsAlias>table_20</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="2C2910BC-B5F1-1B90-4B97-4FDC1A8552B9">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 22:59:39 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Produkt_id" id="94414A8B-2054-DF21-18E7-B29BC1EB3EDA">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 22:59:48 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3BFE294C-3DAA-B5D9-6015-B8B572B7DCEA" referredColumn="646E6610-A863-3430-E2A5-4A4B60674F15"/>
+</associations>
+</Column>
+<Column name="Zamowienie_id" id="BF08142F-18F9-06E5-1F23-4AF16759BBCA">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 22:59:58 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="79EFC472-D1A9-63DE-9126-2BBCD6CC102A" referredColumn="9FB14747-A016-6CB9-DF49-283C58C88CD6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="21894FCC-27FD-74BE-2C5C-D0E899FB8A9E" name="ZamowienieProd_PK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 22:59:39 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2C2910BC-B5F1-1B90-4B97-4FDC1A8552B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="93AE1C38-668D-E447-D698-D191B58355BE" name="ZamowienieProd_Produkt_FK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 22:59:48 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="94414A8B-2054-DF21-18E7-B29BC1EB3EDA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="627A8875-A337-2F62-0D96-8F05EC71C803" name="ZamowienieProd_Zamowienie_FK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 22:59:58 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF08142F-18F9-06E5-1F23-4AF16759BBCA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

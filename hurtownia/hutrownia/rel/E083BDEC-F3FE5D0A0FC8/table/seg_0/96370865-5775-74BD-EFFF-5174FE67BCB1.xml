@@ -1,0 +1,154 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="96370865-5775-74BD-EFFF-5174FE67BCB1" name="Kontakt">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 15:50:02 UTC</createdTime>
+<comment>Tabela</comment>
+<commentInRDBMS>Tabela</commentInRDBMS>
+<ownerDesignName>hutrownia</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="C0F5D09B-0CD9-16C9-59F5-FC7F4DDBA9D4">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:23:25 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Telefon" id="70CD9AA5-702A-8148-83B8-029EE3AD99EC">
+<createdBy>n</createdBy>
+<createdTime>2017-10-30 00:12:41 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="E_mail" id="3D9C67DF-CBB0-CAA1-4C71-A0C7909D8634">
+<createdBy>n</createdBy>
+<createdTime>2017-10-30 00:13:37 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ulica" id="1AD58449-F68C-FC70-76BC-4A438FB02E59">
+<createdBy>n</createdBy>
+<createdTime>2017-10-30 20:56:53 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nr_domu" id="214F473B-3818-DD93-8F70-B0322DEA7C05">
+<createdBy>n</createdBy>
+<createdTime>2017-10-30 20:56:53 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 CHAR</dataTypeSize>
+<ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nr_lokalu" id="1BD67709-632E-6E65-DD0A-89891EC2D4D6">
+<createdBy>n</createdBy>
+<createdTime>2017-10-30 20:56:53 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 CHAR</dataTypeSize>
+<ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Miejscowosc" id="2BF1FABC-006B-1663-3DED-58376B6158ED">
+<createdBy>n</createdBy>
+<createdTime>2017-10-30 20:56:53 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Kod" id="E51C2697-B7DA-79B0-F774-15985F883FDE">
+<createdBy>n</createdBy>
+<createdTime>2017-10-30 20:56:53 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>5 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="88049741-9AC8-50C9-B4B9-13D8653E3714" name="Kontakt_PK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:23:25 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0F5D09B-0CD9-16C9-59F5-FC7F4DDBA9D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5D425CEA-4F17-C84F-D443-CBEE4B89F2DD" name="Kontakt__UN">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 16:00:11 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="70CD9AA5-702A-8148-83B8-029EE3AD99EC"/>
+<colUsage columnID="3D9C67DF-CBB0-CAA1-4C71-A0C7909D8634"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="Kontakt_CK_1" directorySegmentName="seg_0" id="2187BCF2-772A-502C-33C2-29E7F4E8C6FA">
+<createdBy>n</createdBy>
+<createdTime>2017-10-30 00:27:51 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<rule>LEN(telefon) &gt; 8</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="Kontakt_CK_2" directorySegmentName="seg_0" id="0CD1C478-55C7-FD95-5D3B-B98DE43B553E">
+<createdBy>n</createdBy>
+<createdTime>2017-10-30 00:27:51 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<rule>LEN(e_mail) &gt; 5</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="Kontakt_CK_3" directorySegmentName="seg_0" id="C2C5118B-696F-B665-0452-13866767ADC0">
+<createdBy>n</createdBy>
+<createdTime>2017-10-30 20:56:53 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<rule>LEN(ulica) &gt; 2</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

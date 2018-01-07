@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4753105D-B48E-C180-F5E0-2A9ED46AFB4A" name="Konto">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 15:37:52 UTC</createdTime>
+<comment>Tabela</comment>
+<commentInRDBMS>Tabela</commentInRDBMS>
+<ownerDesignName>hutrownia</ownerDesignName>
+<ordsAlias>table_20</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="C97EBE43-0272-D992-9CBA-7457DD884363">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 15:38:26 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Login" id="BE96943E-097A-62B2-06BD-EFC14FC535C9">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 15:44:47 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Haslo" id="1F16B8EA-8A7F-E7AC-F025-A2EE8E96F9E1">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 15:46:14 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="37E87D8A-56A1-C105-A197-9F516728FEE5" name="Konto_PK">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 15:38:26 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C97EBE43-0272-D992-9CBA-7457DD884363"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B4C49E4F-7A78-EB95-1FEF-2A7793C053B6" name="Konto__UN">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 15:45:17 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE96943E-097A-62B2-06BD-EFC14FC535C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="Konto_CK_1" directorySegmentName="seg_0" id="F84DEC74-D190-1E63-7845-794D09B461F3">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 21:34:30 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<rule>len(Login)&gt;4</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="Konto_CK_2" directorySegmentName="seg_0" id="AB09F45A-CFFF-0D06-CE2D-92F0293F02D6">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 21:34:44 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<rule>len(Haslo)=32</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

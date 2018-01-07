@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2AB2007C-7EEE-996B-CF81-5F5E94345914" name="Kategoria">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 15:50:09 UTC</createdTime>
+<comment>Tabela</comment>
+<commentInRDBMS>Tabela</commentInRDBMS>
+<ownerDesignName>hutrownia</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="B278B1C6-5D75-C27E-4823-7B13676E6452">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:27:56 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Kategoria" id="C9DA4AEE-06F5-9CDF-F407-979C2AC27247">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 15:51:35 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A55E676E-4C71-3734-4367-88DE6C295007" name="Kategoria_PK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:27:56 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B278B1C6-5D75-C27E-4823-7B13676E6452"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C01E7180-4D4E-F2A8-2487-5097844DCBD3" name="Kategoria__UN">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 15:51:41 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C9DA4AEE-06F5-9CDF-F407-979C2AC27247"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

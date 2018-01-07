@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="02BD7A8E-C9C5-D787-A2E5-D68DCF4A8DCF" name="Zamowienie">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 15:50:17 UTC</createdTime>
+<comment>Tabela</comment>
+<commentInRDBMS>Tabela</commentInRDBMS>
+<ownerDesignName>hutrownia</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="9FB14747-A016-6CB9-DF49-283C58C88CD6">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:28:10 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Klient_id" id="BC5504DA-47D5-DBFA-B963-CA6652F7DEB2">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 23:02:29 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="49F25C8F-BB9F-0547-317F-608F67C3C0F1" referredColumn="90DDFBFE-A4D2-FB7B-3A29-2DE493B6D2B2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BD5DB67A-B928-44FA-6042-FDC90781A947" name="Zamowienie_PK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:28:10 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9FB14747-A016-6CB9-DF49-283C58C88CD6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3315C395-EC5F-7E56-6A40-AACFE21010B4" name="Zamowienie_Klient_FK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 23:02:29 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BC5504DA-47D5-DBFA-B963-CA6652F7DEB2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

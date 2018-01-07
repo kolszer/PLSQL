@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C05A638A-AEFF-CBCF-6524-2BF010F57C47" name="DostawaProdukt">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 23:04:16 UTC</createdTime>
+<comment>Tabela</comment>
+<commentInRDBMS>Tabela</commentInRDBMS>
+<ownerDesignName>hutrownia</ownerDesignName>
+<ordsAlias>table_22</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="04BB0728-4E16-B4D4-D132-FEAE66760E10">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 23:04:37 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dostawa_id" id="199B183E-C45B-30C2-9F52-0C8E667FFE97">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 23:05:03 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DC4A90B2-FD3F-66A2-BA7F-0752FA80B49C" referredColumn="A3DC4F7F-942B-485B-C626-F6CA205F2FC7"/>
+</associations>
+</Column>
+<Column name="Produkt_id" id="CFFC9DA9-9E33-00CD-6EAC-14594B182DC4">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 23:05:34 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D71CE798-E1E1-A412-1765-D70AE3EEBDB2" referredColumn="646E6610-A863-3430-E2A5-4A4B60674F15"/>
+</associations>
+</Column>
+<Column name="Ilosc" id="F443D42B-0706-FE7D-9FE1-3E95A5B9F874">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 16:16:12 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="38C6FC25-941D-C636-A2C0-39946C522A1A" name="DostawaProdukt_PK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 23:04:37 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04BB0728-4E16-B4D4-D132-FEAE66760E10"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9A73F881-2626-0C73-6D27-31E545B78DC6" name="DostawaProdukt_Dostawa_FK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 23:05:03 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="199B183E-C45B-30C2-9F52-0C8E667FFE97"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AF9B4EA6-3A08-008D-CA8D-21968CAC5086" name="DostawaProdukt_Produkt_FK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 23:05:34 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CFFC9DA9-9E33-00CD-6EAC-14594B182DC4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="DostawaProdukt_CK_1" directorySegmentName="seg_0" id="51E30D78-5F75-1BD1-40AB-27C416F07752">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 21:37:25 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<rule>Ilosc&gt;0</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

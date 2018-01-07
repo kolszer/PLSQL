@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="84B8B80C-B7DE-9B74-A0E3-65CB126BD290" name="Wyplata">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 15:57:02 UTC</createdTime>
+<comment>Tabela</comment>
+<commentInRDBMS>Tabela</commentInRDBMS>
+<ownerDesignName>hutrownia</ownerDesignName>
+<ordsAlias>table_18</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="7C2C9AEF-7468-81AC-94E6-4B2FD92FCA27">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:17:12 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_przelewu" id="A6067C6F-2EDF-E020-22F1-04DD0966572C">
+<createdBy>n</createdBy>
+<createdTime>2017-10-30 21:01:11 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Kwota" id="F9972358-1CE5-0966-F2E3-B7E350B7A770">
+<createdBy>n</createdBy>
+<createdTime>2017-10-30 21:02:20 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pracownik_id" id="E08D900B-A447-433F-8B4E-3727245E78A3">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:19:02 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="40F4D53F-CAA9-D9B8-4A34-A7867E7F3D83" referredColumn="89BB88E3-B2F6-1718-5C5F-0FE2E2176E1E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8A7E24F0-5D0A-39C2-6B83-32415ACAB1C3" name="Wyplata_PK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:17:12 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C2C9AEF-7468-81AC-94E6-4B2FD92FCA27"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="36A45E6D-2340-67AC-6AAB-87C6E1932E86" name="Wyplata_Pracownik_FK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:19:02 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E08D900B-A447-433F-8B4E-3727245E78A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="Wyplata_CK_1" directorySegmentName="seg_0" id="36D7A48A-02FE-6054-8D63-D4156D96618B">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 21:35:37 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<rule>kwota&gt;=0</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

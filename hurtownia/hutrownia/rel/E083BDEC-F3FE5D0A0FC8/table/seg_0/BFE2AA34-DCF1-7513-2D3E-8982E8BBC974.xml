@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BFE2AA34-DCF1-7513-2D3E-8982E8BBC974" name="Producent">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 15:48:13 UTC</createdTime>
+<comment>Tabela</comment>
+<commentInRDBMS>Tabela</commentInRDBMS>
+<ownerDesignName>hutrownia</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="4B0CF259-D386-D0A1-1C1D-E9FA961CDC77">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:25:57 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Kontakt_id" id="BCAB2BC8-0253-3295-711F-6F918CFF6066">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:30:48 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="95367819-05E7-FEDB-CB05-B57F7CB06297" referredColumn="C0F5D09B-0CD9-16C9-59F5-FC7F4DDBA9D4"/>
+</associations>
+</Column>
+<Column name="Nazwa" id="0DE951A6-5B08-1178-D556-7CBC4FBC8D21">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 15:57:05 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A173999B-2061-53F8-3508-7A8A838EC779" name="Producent_PK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:25:57 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B0CF259-D386-D0A1-1C1D-E9FA961CDC77"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1F588849-11A7-091F-A3A2-66C9BEDDF1B7" name="Producent__UN">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 15:57:21 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BCAB2BC8-0253-3295-711F-6F918CFF6066"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5FEB4522-6E33-8737-AE81-69FCB547ABB8" name="Producent_Kontakt_FK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:30:48 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BCAB2BC8-0253-3295-711F-6F918CFF6066"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

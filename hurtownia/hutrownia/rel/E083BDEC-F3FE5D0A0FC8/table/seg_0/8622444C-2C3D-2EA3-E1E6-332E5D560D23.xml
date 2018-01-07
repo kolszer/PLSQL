@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8622444C-2C3D-2EA3-E1E6-332E5D560D23" name="Dostawa">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 15:52:09 UTC</createdTime>
+<comment>Tabela</comment>
+<commentInRDBMS>Tabela</commentInRDBMS>
+<ownerDesignName>hutrownia</ownerDesignName>
+<ordsAlias>table_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="A3DC4F7F-942B-485B-C626-F6CA205F2FC7">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:27:39 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dostawca_id" id="F0863D3E-BCF1-52B4-36BE-039802508798">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 23:03:52 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="009BCA04-91E1-6DDF-CDBB-85F09A03E28A" referredColumn="F8153D2A-76D9-EDD0-182E-2346E6A5FA3F"/>
+</associations>
+</Column>
+<Column name="Oddzial_id" id="FCFFD133-8D52-3EEA-8B74-B19BFA2BAA8C">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 23:06:22 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5DC6C1BC-924C-8D4C-D4B7-5FAFF44F62EB" referredColumn="2EE01829-6088-2CF1-AA56-9C4B95BFF2D7"/>
+</associations>
+</Column>
+<Column name="Data" id="9D777053-7FDD-1E4E-583A-9634B75C8D2A">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 16:09:00 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Koszt_dostawy" id="FC0F6C8F-6CFF-2536-4F5B-32FA1E18996F">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 16:15:12 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Koszt_produktow" id="7658D7A7-DA2D-F643-50D6-FBA3B5B31187">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 16:15:45 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F0678F50-2B91-CE22-CBEC-FFD622C649A6" name="Dostawa_PK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:27:39 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A3DC4F7F-942B-485B-C626-F6CA205F2FC7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3DB8A7C5-0886-6C7A-BF37-7253B973CACB" name="Dostawa_Dostawca_FK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 23:03:52 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F0863D3E-BCF1-52B4-36BE-039802508798"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3CA1B5B7-BFB9-1ED6-21D2-82CC1B887EA7" name="Dostawa_Oddzial_FK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-29 23:06:22 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FCFFD133-8D52-3EEA-8B74-B19BFA2BAA8C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="Dostawa_CK_1" directorySegmentName="seg_0" id="ABB3C96B-B4EC-D5C0-4912-395EAC8C518A">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 21:37:06 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<rule>Koszt_dostawy&gt;=0</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="Dostawa_CK_2" directorySegmentName="seg_0" id="26143CC1-CE2A-B301-2F37-55A0C940845D">
+<createdBy>n</createdBy>
+<createdTime>2017-12-10 21:37:06 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<rule>Koszt_produktow&gt;=0</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

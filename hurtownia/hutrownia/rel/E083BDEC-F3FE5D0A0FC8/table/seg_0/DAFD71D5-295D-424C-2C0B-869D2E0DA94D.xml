@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DAFD71D5-295D-424C-2C0B-869D2E0DA94D" name="Sprzet">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 15:49:46 UTC</createdTime>
+<comment>Tabela</comment>
+<commentInRDBMS>Tabela</commentInRDBMS>
+<ownerDesignName>hutrownia</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="77B8A863-E9D7-1DD2-CABA-D77AEE850297">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:26:57 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nazwa" id="9F86E649-A19B-12EE-AD4C-633CADFA0854">
+<createdBy>n</createdBy>
+<createdTime>2017-10-30 21:03:08 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_serwisu" id="C69A1EDA-634F-9C8F-2F77-E9EBC22C31FE">
+<createdBy>n</createdBy>
+<createdTime>2017-10-30 21:03:27 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Oddzial_id" id="42BA9A9C-577A-6397-925C-FBD7EAC664DC">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:33:26 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="45F5919A-912E-8598-8878-AB54384839F8" referredColumn="2EE01829-6088-2CF1-AA56-9C4B95BFF2D7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DC0A3D47-4A1C-805E-97E3-E46D5FE1EF0B" name="Sprzet_PK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:26:57 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77B8A863-E9D7-1DD2-CABA-D77AEE850297"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0226FEE6-AECA-7349-7679-27D9D5635B00" name="Sprzet_Oddzial_FK">
+<createdBy>n</createdBy>
+<createdTime>2017-10-28 16:33:26 UTC</createdTime>
+<ownerDesignName>hutrownia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="42BA9A9C-577A-6397-925C-FBD7EAC664DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
